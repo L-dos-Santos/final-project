@@ -1,0 +1,33 @@
+digraph Tree {
+node [shape=box, style="rounded", color="black", fontname="helvetica"] ;
+edge [fontname="helvetica"] ;
+0 [label="year <= 1961.0\nsquared_error = 5.5\nsamples = 56\nvalue = 5.1"] ;
+1 [label="year <= 1950.5\nsquared_error = 0.5\nsamples = 29\nvalue = 2.9"] ;
+0 -> 1 [labeldistance=2.5, labelangle=45, headlabel="True"] ;
+2 [label="year <= 1926.0\nsquared_error = 0.1\nsamples = 25\nvalue = 2.7"] ;
+1 -> 2 ;
+3 [label="squared_error = 0.0\nsamples = 13\nvalue = 2.5"] ;
+2 -> 3 ;
+4 [label="squared_error = 0.1\nsamples = 12\nvalue = 2.9"] ;
+2 -> 4 ;
+5 [label="year <= 1954.0\nsquared_error = 0.3\nsamples = 4\nvalue = 4.4"] ;
+1 -> 5 ;
+6 [label="squared_error = 0.0\nsamples = 1\nvalue = 3.8"] ;
+5 -> 6 ;
+7 [label="squared_error = 0.0\nsamples = 3\nvalue = 4.9"] ;
+5 -> 7 ;
+8 [label="year <= 2010.0\nsquared_error = 0.9\nsamples = 27\nvalue = 7.3"] ;
+0 -> 8 [labeldistance=2.5, labelangle=-45, headlabel="False"] ;
+9 [label="year <= 1971.0\nsquared_error = 0.5\nsamples = 20\nvalue = 7.8"] ;
+8 -> 9 ;
+10 [label="squared_error = 0.3\nsamples = 3\nvalue = 6.7"] ;
+9 -> 10 ;
+11 [label="squared_error = 0.3\nsamples = 17\nvalue = 8.0"] ;
+9 -> 11 ;
+12 [label="year <= 2019.0\nsquared_error = 0.2\nsamples = 7\nvalue = 6.3"] ;
+8 -> 12 ;
+13 [label="squared_error = 0.0\nsamples = 5\nvalue = 6.6"] ;
+12 -> 13 ;
+14 [label="squared_error = 0.0\nsamples = 2\nvalue = 5.7"] ;
+12 -> 14 ;
+}
